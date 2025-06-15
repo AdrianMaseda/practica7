@@ -1,0 +1,43 @@
+.bg-bisque {
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery > img{
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.gallery > img:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary{
+    background-color: bisque !important;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black !important;
+}
+
+body {
+    margin-bottom: 140px;
+}
+
+footer {
+    z-index: 1000;
+    bottom: 0;
+    position: fixed;
+    background-color: bisque;
+    width: 100%;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-bisque">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Practica7</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../views/pagina1.html">Pag1</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="../views/pagina2.html">Pag2</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="../views/pagina3.html">Pag3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container-fluid md-4 mt-4 mx-2">
+
+        <h3>Rellena los siguientes datos:</h3>
+        <form class="row g-3">
+            <div class="col-md-7">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="Mark" required
+                 title="El nombre debe contener solo letras" pattern="[A-Za-z]+">
+            </div>
+            <div class="col-md-7">
+                <label for="validationDefault02" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Otto Otter" required
+                 title="Los apellidos deben contener solo letras y espacios" pattern="[A-Za-z\s]+">
+            </div>
+            <div class="col-md-7">
+                <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="mariano99" required
+                 title="El nombre de usuario puede contener letras y números" pattern="[A-Za-z0-9]+">
+            </div>
+            <div class="col-md-7">
+                <label for="validationDefault03" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="validationDefault03" placeholder="ejemplo@empresa.com" required
+                 title="El correo debe ser una cadena del tipo text@texto.dominio" pattern="[A-Za-z0-9]+@[A-Za-z]\.[a-z]+">
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">State</label>
+                <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>Spain</option>
+                <option>France</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationDefault05" placeholder="33011" required
+                 title="El zip debe contener cinco núemros" pattern="[0-9]{5}">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="text-center mt-2">
+        <div class="social">
+            <a href="https://www.facebook.com"><img src="../images/social/facebook.png" alt="Facebook" class="rounded-circle border mx-2 mt-2" width="30"></a>
+            <a href="https://www.twitter.com"><img src="../images/social/twitter.png" alt="Twitter" class="rounded-circle border mx-2 mt-2" width="30"></a>
+            <a href="https://www.instagram.com"><img src="../images/social/instagram.png" alt="Instagram" class="rounded-circle border mx-2 mt-2" width="30"></a>
+        </div>
+        <p>Todos los derechos reservados</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
